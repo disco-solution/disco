@@ -1,0 +1,45 @@
+{
+  "name": "@niacomsoft/disco-sdk",
+  "version": "1.0.0",
+  "description": "Disco .NET SDK!",
+  "scripts": {
+    "release:patch-dryrun": "standard-version -r patch -i CHANGELOG.md --dry-run",
+    "release:patch": "standard-version -r patch -i CHANGELOG.md",
+    "release:minor-dryrun": "standard-version -r minor -i CHANGELOG.md --dry-run",
+    "release:minor": "standard-version -r minor -i CHANGELOG.md",
+    "release:major-dryrun": "standard-version -r major -i CHANGELOG.md --dry-run",
+    "release:major": "standard-version -r major -i CHANGELOG.md"
+  },
+  "keywords": [
+    "disco",
+    "distributed-configuration",
+    "dotnet",
+    "dotnet-framework",
+    "dotnetcore",
+    "aspnet",
+    "aspnetcore",
+    "nuget"
+  ],
+  "author": {
+    "name": "Wang Yucai",
+    "email": "netowls-studio@outlook.com"
+  },
+  "license": "MIT",
+  "displayName": "Disco SDK",
+  "homepage": "https://github.com/disco-solution/sdk",
+  "markdown": "github",
+  "os": [
+    "windows",
+    "linux",
+    "osx"
+  ],
+  "pricing": "Free",
+  "readme": "README.md",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/disco-solution/sdk"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
