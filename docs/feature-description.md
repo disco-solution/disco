@@ -4,8 +4,143 @@
 
 ## 项目结构 Project Structure
 
-- 公共类库项目 **Common**
-  - 项目名称 csproj: `Disco.Common`
-  - 命名空间 namespace: `Niacomsoft.OpenSource.Disco.*`
-  - 程序集名称 assembly: `Niacomsoft.Disco.Common`
-  - NuGet 包 nupkg: `Niacomsoft.Disco.Common`
+- 多语言支持 Multilingual
+  - 项目名称 (Project): `Disco.Multilingual.Resources`
+  - 根命名空间 (Root Namespace): `Disco.Resources`
+  - 程序集名称 (Assembly): `Disco.Multilingual.Resources`
+  - NuGet 包名称 (NuGet Package): `Disco.Multilingual.Resources`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 公共类库 Common Library
+  - 项目名称 (Project): `Disco.Common`
+  - 根命名空间 (Root Namespace): `Disco`
+  - 程序集名称 (Assembly): `Disco.Common`
+  - NuGet 包名称 (NuGet Package): `Disco.Common`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 核心类库抽象 Core Abstraction
+  - 项目名称 (Project): `Disco.Core.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco`
+  - 程序集名称 (Assembly): `Disco.Core.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.Core.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 核心类库 Core
+  - 项目名称 (Project): `Disco.Core`
+  - 根命名空间 (Root Namespace): `Disco`
+  - 程序集名称 (Assembly): `Disco.Core`
+  - NuGet 包名称 (NuGet Package): `Disco.Core`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 运行时诊断日志抽象 Diagnostics Abstraction
+  - 项目名称 (Project): `Disco.Logging.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.Diagnostics`
+  - 程序集名称 (Assembly): `Disco.Logging.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.Logging.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 基于 NLog 运行时诊断日志 Diagnostics With NLog
+  - 项目名称 (Project): `Disco.Logging.NLog`
+  - 根命名空间 (Root Namespace): `Disco.Diagnostics`
+  - 程序集名称 (Assembly): `Disco.Logging.NLog`
+  - NuGet 包名称 (NuGet Package): `Disco.Logging.NLog`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 基于 NLog 运行时诊断日志依赖注入扩展 Diagnostics With NLog DependencyInjection
+  - 项目名称 (Project): `Disco.DependencyInjection.Logging.NLog`
+  - 根命名空间 (Root Namespace): `Disco.DependencyInjection`
+  - 程序集名称 (Assembly): `Disco.DependencyInjection.Logging.NLog`
+  - NuGet 包名称 (NuGet Package): `Disco.DependencyInjection.Logging.NLog`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Standard 2.0+
+- 配置服务抽象 Configuration Abstraction
+  - 项目名称 (Project): `Disco.Configuration.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.Configuration`
+  - 程序集名称 (Assembly): `Disco.Configuration.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.Configuration.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 基于 ConfigurationManager 的配置服务 ConfigurationManager
+  - 项目名称 (Project): `Disco.Configuration.ConfigurationManager`
+  - 根命名空间 (Root Namespace): `Disco.Configuration`
+  - 程序集名称 (Assembly): `Disco.Configuration.ConfigurationManager`
+  - NuGet 包名称 (NuGet Package): `Disco.Configuration.ConfigurationManager`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+- 基于 Options 的配置服务 Configuration Options
+  - 项目名称 (Project): `Disco.Configuration.Options`
+  - 根命名空间 (Root Namespace): `Disco.Configuration`
+  - 程序集名称 (Assembly): `Disco.Configuration.Options`
+  - NuGet 包名称 (NuGet Package): `Disco.Configuration.Options`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Standard 2.0+
+- 基于 Options 的配置服务依赖注入扩展 Configuration Options DependencyInjection
+  - 项目名称 (Project): `Disco.DependencyInjection.Configuration.Options`
+  - 根命名空间 (Root Namespace): `Disco.DependencyInjection`
+  - 程序集名称 (Assembly): `Disco.DependencyInjection.Configuration.Options`
+  - NuGet 包名称 (NuGet Package): `Disco.DependencyInjection.Configuration.Options`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Standard 2.0+
+- ADO.NET 抽象 ADO.NET Abstraction
+  - 项目名称 (Project): `Disco.Data.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.Data`
+  - 程序集名称 (Assembly): `Disco.Data.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- ADO.NET Dapper 扩展 ADO.NET Dapper
+  - 项目名称 (Project): `Disco.Data.DapperExtended`
+  - 根命名空间 (Root Namespace): `Disco.Data`
+  - 程序集名称 (Assembly): `Disco.Data.DapperExtended`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.DapperExtended`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- ADO.NET SQL Server 客户端 ADO.NET for SQL Server
+  - 项目名称 (Project): `Disco.Data.SqlClient`
+  - 根命名空间 (Root Namespace): `Disco.Data.SqlClient`
+  - 程序集名称 (Assembly): `Disco.Data.SqlClient`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.SqlClient`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- ADO.NET MySQL 客户端 ADO.NET for MySQL
+  - 项目名称 (Project): `Disco.Data.MySQL`
+  - 根命名空间 (Root Namespace): `Disco.Data.MySQL`
+  - 程序集名称 (Assembly): `Disco.Data.MySQL`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.MySQL`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- ADO.NET MySQL 客户端 ADO.NET for MySQL (MySqlConnector)
+  - 项目名称 (Project): `Disco.Data.MySqlConnector`
+  - 根命名空间 (Root Namespace): `Disco.Data.MySqlConnector`
+  - 程序集名称 (Assembly): `Disco.Data.MySqlConnector`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.MySqlConnector`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- ADO.NET MySQL 客户端 ADO.NET for PostgreSQL
+  - 项目名称 (Project): `Disco.Data.PostgreSQL`
+  - 根命名空间 (Root Namespace): `Disco.Data.PostgreSQL`
+  - 程序集名称 (Assembly): `Disco.Data.PostgreSQL`
+  - NuGet 包名称 (NuGet Package): `Disco.Data.PostgreSQL`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 文件存储抽象 File Storage Abstraction
+  - 项目名称 (Project): `Disco.IO.Storage.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
