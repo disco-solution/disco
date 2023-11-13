@@ -4,6 +4,8 @@
 
 ## 项目结构 Project Structure
 
+### 基础库 Core Library
+
 - 多语言支持 Multilingual
   - 项目名称 (Project): `Disco.Multilingual.Resources`
   - 根命名空间 (Root Namespace): `Disco.Resources`
@@ -144,3 +146,123 @@
   - 支持的 .NET 版本 (Supported .NET Versions)
     - ☑️ .NET Framework 4.5+
     - ☑️ .NET Standard 2.0+
+- 本地文件存储 File LocalStorage
+  - 项目名称 (Project): `Disco.IO.Storage.Local`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.Local`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.Local`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- FTP 文件存储 File FtpStorage
+  - 项目名称 (Project): `Disco.IO.Storage.Ftp`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.Ftp`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.Ftp`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 对象存储抽象 Object Storage Abstraction
+  - 项目名称 (Project): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- 对象存储抽象 Object Storage Abstraction
+  - 项目名称 (Project): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.ObjectStorage.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5+
+    - ☑️ .NET Standard 2.0+
+- Minio 对象存储 Object Storage for Minio
+  - 项目名称 (Project): `Disco.IO.Storage.ObjectStorage.Minio`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.ObjectStorage.Minio`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.ObjectStorage.Minio`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Standard 2.0+
+- AWS-S3 对象存储 Object Storage for AWS-S3
+  - 项目名称 (Project): `Disco.IO.Storage.ObjectStorage.AwsS3`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.ObjectStorage.AWSS3`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.ObjectStorage.AWSS3`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 阿里云 OSS 对象存储 Object Storage for Aliyun OSS
+  - 项目名称 (Project): `Disco.IO.Storage.ObjectStorage.AliOss`
+  - 根命名空间 (Root Namespace): `Disco.IO.Storage`
+  - 程序集名称 (Assembly): `Disco.IO.Storage.ObjectStorage.AliOSS`
+  - NuGet 包名称 (NuGet Package): `Disco.IO.Storage.ObjectStorage.AliOSS`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Standard 2.0+
+- 元数据通知渠道抽象 Metadata Notify Channel Abstraction
+  - 项目名称 (Project): `Disco.Metadata.Abstraction`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.Abstraction`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.Abstraction`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 MQTT 元数据通知 Metadata MQTT Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.MQTT`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.MQTT`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.MQTT`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 Consul 元数据通知 Metadata Consul Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.Consul`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.Consul`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.Consul`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 Zookeeper 元数据通知 Metadata Zookeeper Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.Zookeeper`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.Zookeeper`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.Zookeeper`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 Socket 元数据通知 Metadata Socket Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.Socket`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.Socket`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.Socket`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 WebSocket 元数据通知 Metadata WebSocket Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.WebSocket`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.WebSocket`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.WebSocket`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+- 基于 SignalR 元数据通知 Metadata SignalR Notify Channel
+  - 项目名称 (Project): `Disco.Metadata.SignalR`
+  - 根命名空间 (Root Namespace): `Disco.Metadata`
+  - 程序集名称 (Assembly): `Disco.Metadata.SignalR`
+  - NuGet 包名称 (NuGet Package): `Disco.Metadata.SignalR`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ .NET Framework 4.5
+    - ☑️ .NET Standard 2.0+
+
+### 服务器 Server
+
+- 核心 ASP.NET 服务器 ASP.NET Core
+  - 项目名称 (Project): `Disco.Server.Host`
+  - 根命名空间 (Root Namespace): `Disco.Server`
+  - 程序集名称 (Assembly): `Disco.Server.Host`
+  - NuGet 包名称 (NuGet Package): `Disco.Server.Host`
+  - 支持的 .NET 版本 (Supported .NET Versions)
+    - ☑️ ASP.NET 7+
