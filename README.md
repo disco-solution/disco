@@ -21,8 +21,10 @@
   | [.NET & .NET Framework][dotnet]                      |            |
   | Windows 11                                           |            |
 
-- 文档目录 Table Of Content
-  - [功能说明 Feature Description](docs/feature-description.md)
+## 文档 Docs
+
+- [项目和功能 Projects & Features](docs/projects-and-features.md)
+
 
 ## 开源协议 LICENSE
 
