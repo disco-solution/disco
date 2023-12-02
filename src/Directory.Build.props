@@ -1,7 +1,31 @@
 <Project>
-  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
-  <PropertyGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <Authors>王 玉才 (Wang Yucai)</Authors>
+        <Company />
+        <Product>Disco</Product>
+        <Description>
+            提供了国际化多语言支持所需的资源文件。
+            Resource files required for internationalized multilingual support are provided.
+        </Description>
+        <Copyright>© 2023 Wang Yucai.</Copyright>
+        <PackageProjectUrl>https://github.com/disco-solution/disco</PackageProjectUrl>
+        <PackageIcon>Disco-64.png</PackageIcon>
+        <RepositoryUrl>https://github.com/disco-solution/disco</RepositoryUrl>
+        <PackageTags>distributed configuration; disco; dotnet; dotnet-core; dotnet-framework; aspnet; aspnet-core</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <BaseOutputPath>..\..\.build</BaseOutputPath>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
 
-
-  </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\..\assets\Avatar\Disco-64.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 </Project>

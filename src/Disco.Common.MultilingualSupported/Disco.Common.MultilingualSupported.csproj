@@ -1,8 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Disco.Globalization.Resources</RootNamespace>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>netstandard1.0; net20</TargetFrameworks>
+        <RootNamespace>Disco.Globalization.Resources</RootNamespace>
+        <PackageTags>$(PackageTags); resources; multilingual; globalization</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include=".\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
 </Project>
