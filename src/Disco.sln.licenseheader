@@ -1,6 +1,6 @@
 ﻿extensions: designer.cs generated.cs
 extensions: .cs .cpp .h
-// © 2006 - %CurrentYear% WANG YUCAI. LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.
+// © %CurrentYear% WANG YUCAI. LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.
 extensions: .aspx .ascx
 <%-- 
 Copyright (c) 2011 rubicon IT GmbH
