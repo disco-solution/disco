@@ -8,7 +8,8 @@
     "release:minor-dryrun": "standard-version -r minor -i CHANGELOG.md --dry-run",
     "release:minor": "standard-version -r minor -i CHANGELOG.md",
     "release:major-dryrun": "standard-version -r major -i CHANGELOG.md --dry-run",
-    "release:major": "standard-version -r major -i CHANGELOG.md"
+    "release:major": "standard-version -r major -i CHANGELOG.md",
+    "dotnet:release": "dotnet tool run nbgv prepare-release"
   },
   "keywords": [
     "disco",

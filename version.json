@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/Nerdbank.GitVersioning/main/src/NerdBank.GitVersioning/version.schema.json",
+  "version": "1.0.0-beta",
+  "assemblyVersion": {
+    "precision": "build"
+  },
+  "gitCommitIdPrefix": "g",
+  "gitCommitIdShortFixedLength": 8,
+  "nugetPackageVersion": {
+    "semVer": 1,
+    "precision": "build"
+  },
+  "release": {
+    "tagName": "v{version}",
+    "branchName": "release/v{version}",
+    "versionIncrement": "build",
+    "firstUnstableTag": "alpha"
+  }
+}
