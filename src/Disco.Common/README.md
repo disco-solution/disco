@@ -1,8 +1,8 @@
 # README
 
-> 提供了国际化多语言支持所需的资源文件。
+> 此类库提供了 `Disco` 所需的通用功能。
 > 
-> Resource files required for internationalized multilingual support are provided.
+> Such library provides the common functionality that `Disco` needs.
 
 ## 支持的 .NET 版本 (Supported Microsoft .NET Versions)
 

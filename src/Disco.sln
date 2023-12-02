@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Common.MultilingualSupported", "Disco.Common.MultilingualSupported\Disco.Common.MultilingualSupported.csproj", "{DF35C8FF-E2D6-47EC-AE9C-AE87F491E172}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disco.Common", "Disco.Common\Disco.Common.csproj", "{AEAB7F9B-719B-48A7-A37B-87046F92DFA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +17,16 @@ Global
 		{DF35C8FF-E2D6-47EC-AE9C-AE87F491E172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF35C8FF-E2D6-47EC-AE9C-AE87F491E172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF35C8FF-E2D6-47EC-AE9C-AE87F491E172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAB7F9B-719B-48A7-A37B-87046F92DFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAB7F9B-719B-48A7-A37B-87046F92DFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAB7F9B-719B-48A7-A37B-87046F92DFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAB7F9B-719B-48A7-A37B-87046F92DFA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		RESX_NeutralResourcesLanguage = zh-Hans
+		SolutionGuid = {97A25B8E-FBC8-41BC-9A4D-6DFE11A4F785}
 	EndGlobalSection
 EndGlobal
