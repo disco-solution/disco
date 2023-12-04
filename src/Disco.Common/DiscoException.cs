@@ -29,9 +29,10 @@ namespace Disco
         /// <para> <see cref="Exception" /> 类型的对象实例。 </para>
         /// </param>
         public DiscoException(string message, Exception innerException)
-            : base(string.IsNullOrWhiteSpace(message)
-                ? SR.GetString("DiscoException_default_exception_message")
-                : message, innerException)
+            : base(StringUtilities.SafeGet(message,
+                                           (str) => string.IsNullOrWhiteSpace(str),
+                                           SR.GetString("DiscoException_default_exception_message")),
+                   innerException)
         {
         }
 
