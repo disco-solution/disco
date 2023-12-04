@@ -29,10 +29,8 @@ namespace Disco.Resources
         /// 读取资源字符串相关的方法。
         /// <para> <see cref="ResourceManager" /> 类型的对象实例。 </para>
         /// </param>
-        public StringResolver(ResourceManager resourceMgr)
-        {
-            ResourceManager = resourceMgr;
-        }
+        public StringResolver(ResourceManager resourceMgr) 
+            => ResourceManager = resourceMgr;
 
         /// <summary> 初始化 <see cref="StringResolver" /> 的新实例。 </summary>
         /// <param name="resourceType"> 包含了资源的类型。 </param>
@@ -63,8 +61,12 @@ namespace Disco.Resources
         }
 
         /// <inheritdoc />
-        /// <exception cref="MissingManifestResourceException"> </exception>
-        /// <exception cref="MissingSatelliteAssemblyException"> </exception>
+        /// <exception cref="MissingManifestResourceException">
+        /// 当调用 <see cref="System.Resources.ResourceManager.GetString(string, CultureInfo)" /> 方法时，可能引发此类型的异常。
+        /// </exception>
+        /// <exception cref="MissingSatelliteAssemblyException">
+        /// 当调用 <see cref="System.Resources.ResourceManager.GetString(string, CultureInfo)" /> 方法时，可能引发此类型的异常。
+        /// </exception>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "Ex0200:Member is documented as throwing exception not documented on member in base or interface type", Justification = "<挂起>")]
         public virtual string GetString(string resourceName, CultureInfo culture)
         {
@@ -73,10 +75,9 @@ namespace Disco.Resources
         }
 
         /// <inheritdoc />
-        public virtual string GetString(string resourceName)
-        {
-            return GetString(resourceName);
-        }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "Ex0100:Member may throw undocumented exception", Justification = "<挂起>")]
+        public virtual string GetString(string resourceName) 
+            => GetString(resourceName, null);
 
         /// <summary>
         /// 当 <paramref name="resourceName" /> 等于 <see langword="null" />、长度等于 0 或全部为空白符时，将引发一个 <see
