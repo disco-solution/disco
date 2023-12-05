@@ -7,7 +7,7 @@ namespace Disco
     using System.Text;
 
     /// <summary> 提供了 <see cref="string" /> 相关的辅助方法。 </summary>
-    public static class StringUtilities
+    public static partial class StringUtilities
     {
         /// <summary> 使用指定的编码 <paramref name="encoding" /> 获取字符串 <paramref name="s" /> 的字节数组。 </summary>
         /// <param name="s"> 字符串。 </param>
