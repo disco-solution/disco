@@ -23,7 +23,7 @@ namespace Disco
         /// <returns> 字符串。 </returns>
         /// <seealso cref="Func{T, TResult}" />
         /// <seealso cref="Func{TResult}" />
-        public static string SafeGet(string s, Func<string, bool> matches, Func<string> ifMatches)
+        public static string IfGet(string s, Func<string, bool> matches, Func<string> ifMatches)
             => (matches(s)) ? ifMatches() : s;
 
         /// <summary>
@@ -37,8 +37,8 @@ namespace Disco
         /// <param name="ifMatches"> 当 <paramref name="s" /> 满足 <paramref name="matches" /> 时，返回的安全值。 </param>
         /// <returns> 字符串。 </returns>
         /// <seealso cref="Func{T, TResult}" />
-        public static string SafeGet(string s, Func<string, bool> matches, string ifMatches = "")
-            => SafeGet(s, matches, () => ifMatches);
+        public static string IfGet(string s, Func<string, bool> matches, string ifMatches = "")
+            => IfGet(s, matches, () => ifMatches);
 
         /// <summary>
         /// 当 <paramref name="s" /> 等于 <see langword="null" /> 时，返回 <paramref name="ifNull" /> 的返回值；否则返回 <paramref name="s" />。
@@ -50,8 +50,8 @@ namespace Disco
         /// </param>
         /// <returns> 字符串。 </returns>
         /// <seealso cref="Func{TResult}" />
-        public static string SafeGet(string s, Func<string> ifNull)
-            => SafeGet(s, (str) => str is null, ifNull);
+        public static string NullGet(string s, Func<string> ifNull)
+            => IfGet(s, (str) => str is null, ifNull);
 
         /// <summary>
         /// 当 <paramref name="s" /> 等于 <see langword="null" /> 时，返回 <paramref name="ifNull" />；否则返回 <paramref name="s" />。
@@ -59,7 +59,7 @@ namespace Disco
         /// <param name="s"> 需要校验的字符串。 </param>
         /// <param name="ifNull"> 当字符串 <paramref name="s" /> 等于 <see langword="null" /> 时，返回的安全值。 </param>
         /// <returns> 字符串。 </returns>
-        public static string SafeGet(string s, string ifNull = "") 
-            => SafeGet(s, () => ifNull);
+        public static string NullGet(string s, string ifNull = "") 
+            => NullGet(s, () => ifNull);
     }
 }
