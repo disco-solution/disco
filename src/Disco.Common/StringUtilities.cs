@@ -20,13 +20,11 @@ namespace Disco
         /// <exception cref="ArgumentNullException"> 当 <paramref name="encoding" /> 等于 <see langword="null" /> 时，将引发此类型的异常。 </exception>
         public static byte[] GetBytes(string s, Encoding encoding)
         {
-            if (encoding is null)
-            {
-                throw new ArgumentNullException(nameof(encoding),
-                                                SR.Format("ArgumentNullException_exception_message_with_argument_name", nameof(encoding)));
-            }
-
-            return s is null ? null : encoding.GetBytes(s);
+            return encoding is null
+                ? throw new ArgumentNullException(
+                    nameof(encoding),
+                    SR.Format("ArgumentNullException_exception_message_with_argument_name", nameof(encoding)))
+                : s is null ? null : encoding.GetBytes(s);
         }
 
         /// <summary> 使用 <see cref="UTF8Encoding" /> 获取字符串 <paramref name="s" /> 的字节数组。 </summary>
@@ -48,13 +46,11 @@ namespace Disco
         /// <exception cref="ArgumentNullException"> 当 <paramref name="encoding" /> 等于 <see langword="null" /> 时，将引发此类型的异常。 </exception>
         public static string GetString(byte[] bytes, Encoding encoding)
         {
-            if (encoding is null)
-            {
-                throw new ArgumentNullException(nameof(encoding),
-                                                SR.Format("ArgumentNullException_exception_message_with_argument_name", nameof(encoding)));
-            }
-
-            return bytes is null || bytes.LongLength == 0 ? null : encoding.GetString(bytes);
+            return encoding is null
+                ? throw new ArgumentNullException(
+                    nameof(encoding),
+                    SR.Format("ArgumentNullException_exception_message_with_argument_name", nameof(encoding))) : bytes is null || bytes.LongLength == 0 ? null
+                : encoding.GetString(bytes);
         }
 
         /// <summary> 使用 <see cref="UTF8Encoding" /> 编码获取字符串。 </summary>
