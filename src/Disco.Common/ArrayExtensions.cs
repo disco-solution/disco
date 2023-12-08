@@ -13,7 +13,7 @@ namespace Disco
         /// <para> <see cref="Array" /> 类型的对象实例。 </para>
         /// </param>
         /// <returns> 当数组等于 <see langword="null" /> 或长度等于 0 时，返回 <see langword="false" />；否则返回 <see langword="true" />。 </returns>
-        public static bool HasValue(this Array array) 
+        public static bool HasValue(this Array array)
             => !(array is null || array.LongLength == 0);
     }
 }
