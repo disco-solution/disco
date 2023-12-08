@@ -8,6 +8,7 @@ namespace Disco.Resources
     /// <summary> 提供了读取内置资源字符串相关的方法。 </summary>
     public static class SR
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE1006:命名样式", Justification = "<挂起>")]
         private static readonly IStringResolver s_stringResolver;
 
         /// <summary> 初始化 <see cref="SR" /> 的新实例。 </summary>
